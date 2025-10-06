@@ -23,4 +23,4 @@ RUN apt-get update && \
 COPY rootfs /
 
 # Install virtual-bridge
-RUN npm install -g @tommysense/virtual-bridge@0.2.3
+RUN npm install -g @tommysense/virtual-bridge@0.3.0
