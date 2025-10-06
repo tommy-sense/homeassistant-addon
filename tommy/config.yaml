@@ -1,0 +1,24 @@
+name: TOMMY
+version: "0.2.3"
+slug: tommysense-homeassistant-addon
+description: TOMMY (Home Assistant Add-on)
+url: "https://github.com/tommy-sense/homeassistant-addon"
+arch:
+  - armhf
+  - armv7
+  - aarch64
+  - amd64
+  - i386
+startup: application
+boot: auto
+host_network: true
+apparmor: true
+environment:
+  CONFIG_DIR: /data
+ingress: true
+ingress_port: 0
+panel_icon: mdi:wifi-arrow-left-right
+init: false
+map:
+  - type: data
+    read_only: False
