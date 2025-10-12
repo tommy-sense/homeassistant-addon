@@ -1,7 +1,17 @@
+# Stage 1: Pull tommysense/virtual-bridge
+FROM tommysense/virtual-bridge:latest AS virtual-bridge
+
+# Stage 2: Build Home Assistant add-on
 ARG BUILD_FROM
 FROM $BUILD_FROM
 
-# Download tempio for the target architecture
+# Copy application files from virtual bridge
+COPY --from=virtual-bridge /app /app
+
+# Reinstall dependencies to ensure compatibility with target architecture
+RUN cd /app && rm -rf node_modules && npm install --omit=dev
+
+# Install tempio templating engine
 ARG TEMPIO_VERSION BUILD_ARCH
 RUN \
     curl -sSLf -o /usr/bin/tempio \
@@ -19,8 +29,8 @@ RUN apt-get update && \
     apt-get install -y nodejs caddy && \
     rm -rf /var/lib/apt/lists/*
 
+# Configure data directory
+ENV CONFIG_DIR=/data
+
 # Copy root filesystem
 COPY rootfs /
-
-# Install virtual-bridge
-RUN npm install -g @tommysense/virtual-bridge@0.3.0

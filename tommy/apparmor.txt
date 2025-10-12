@@ -16,7 +16,7 @@ profile tommysense-homeassistant-addon flags=(attach_disconnected,mediate_delete
 
   # Ptrace permissions for process monitoring
   ptrace (read) peer=tommysense-homeassistant-addon//caddy_service,
-  ptrace (read) peer=tommysense-homeassistant-addon//virtual_bridge,
+  ptrace (read) peer=tommysense-homeassistant-addon//tommy,
 
   # S6-Overlay
   /init ix,
@@ -40,8 +40,8 @@ profile tommysense-homeassistant-addon flags=(attach_disconnected,mediate_delete
 
   # Start profiles for services
   /usr/bin/caddy cx -> caddy_service,
-  /usr/bin/tommy-virtual-bridge cx -> virtual_bridge,
-  /usr/bin/node cx -> virtual_bridge,
+  /app/start.sh cx -> tommy,
+  /usr/bin/node cx -> tommy,
 
   profile caddy_service flags=(attach_disconnected,mediate_deleted) {
     #include <abstractions/base>
@@ -108,7 +108,7 @@ profile tommysense-homeassistant-addon flags=(attach_disconnected,mediate_delete
     unix,
   }
 
-  profile virtual_bridge flags=(attach_disconnected,mediate_deleted) {
+  profile tommy flags=(attach_disconnected,mediate_deleted) {
     #include <abstractions/base>
 
     # Receive signals from S6-Overlay
@@ -127,9 +127,8 @@ profile tommysense-homeassistant-addon flags=(attach_disconnected,mediate_delete
     /usr/lib/node_modules/** r,
     /usr/local/lib/node_modules/** r,
     
-    # tommy-virtual-bridge binary
-    /usr/bin/tommy-virtual-bridge rix,
-    /usr/local/bin/tommy-virtual-bridge rix,
+    # Start script
+    /app/start.sh rix,
     
     # Shell access
     /bin/sh rix,

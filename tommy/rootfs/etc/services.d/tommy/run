@@ -14,7 +14,7 @@ fi
 
 # Start virtual bridge
 if [ -n "$INGRESS_PATH" ]; then
-    exec /usr/bin/tommy-virtual-bridge --homeassistant --ingress-path "$INGRESS_PATH"
+    exec /app/start.sh --ingress-path "$INGRESS_PATH"
 else
-    exec /usr/bin/tommy-virtual-bridge --homeassistant
+    exec /app/start.sh
 fi

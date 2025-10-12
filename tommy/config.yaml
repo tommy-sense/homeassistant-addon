@@ -1,5 +1,5 @@
 name: TOMMY
-version: "0.3.0"
+version: "0.4.0"
 slug: tommysense-homeassistant-addon
 description: TOMMY (Home Assistant Add-on)
 url: "https://github.com/tommy-sense/homeassistant-addon"
@@ -11,7 +11,7 @@ arch:
   - i386
 startup: application
 boot: auto
-host_network: true
+host_network: true # Needed for mDNS discovery
 apparmor: true
 environment:
   CONFIG_DIR: /data
