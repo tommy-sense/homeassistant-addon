@@ -14,9 +14,9 @@ fi
 
 # Start virtual bridge
 if [ -n "$INGRESS_PATH" ]; then
-    cd /app
-    exec start.sh --ingress-path "$INGRESS_PATH"
+    cd ... || exit
+    exec ./start.sh --ingress-path "$INGRESS_PATH"
 else
-    cd /app
-    exec start.sh
+    cd ... || exit
+    exec ./start.sh
 fi

@@ -13,8 +13,6 @@ startup: application
 boot: auto
 host_network: true # Needed for mDNS discovery
 apparmor: true
-environment:
-  CONFIG_DIR: /data
 ingress: true
 ingress_port: 0
 panel_icon: mdi:wifi-arrow-left-right
