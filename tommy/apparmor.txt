@@ -121,7 +121,7 @@ profile tommysense-homeassistant-addon flags=(attach_disconnected,mediate_delete
     /data/** rw,
   
     # Application files
-    /app/** rix,
+    /app/** rwix,
 
     # System binaries
     /bin/** rix,
