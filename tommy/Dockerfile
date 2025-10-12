@@ -1,8 +1,9 @@
+ARG BUILD_FROM
+
 # Stage 1: Pull tommysense/virtual-bridge
 FROM tommysense/virtual-bridge:latest AS virtual-bridge
 
 # Stage 2: Build Home Assistant add-on
-ARG BUILD_FROM
 FROM $BUILD_FROM
 
 # Copy application files from virtual bridge
