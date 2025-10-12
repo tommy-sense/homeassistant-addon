@@ -9,9 +9,6 @@ FROM $BUILD_FROM
 # Copy application files from virtual bridge
 COPY --from=virtual-bridge /app /app
 
-# Reinstall dependencies to ensure compatibility with target architecture
-RUN cd /app && rm -rf node_modules && npm install --omit=dev
-
 # Install tempio templating engine
 ARG TEMPIO_VERSION BUILD_ARCH
 RUN \
@@ -29,6 +26,9 @@ RUN apt-get update && \
     apt-get update && \
     apt-get install -y nodejs caddy && \
     rm -rf /var/lib/apt/lists/*
+
+# Reinstall dependencies to ensure compatibility with target architecture
+RUN cd /app && rm -rf node_modules && npm install --omit=dev
 
 # Configure data directory
 ENV CONFIG_DIR=/data
