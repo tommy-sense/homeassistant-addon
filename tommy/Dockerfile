@@ -28,7 +28,12 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 
 # Reinstall dependencies to ensure compatibility with target architecture
-RUN cd /app && rm -rf node_modules && npm install --omit=dev
+RUN cd /app && \
+    mv node_modules/@tommy/compute-engine /tmp/compute-engine && \
+    rm -rf node_modules && \
+    mkdir -p node_modules/@tommy && \
+    mv /tmp/compute-engine node_modules/@tommy/compute-engine && \
+    npm install --omit=dev
 
 # Configure data directory
 ENV CONFIG_DIR=/data
