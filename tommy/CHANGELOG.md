@@ -1,5 +1,11 @@
 # TOMMY
 
+## 0.9.3
+
+### Minor Changes
+
+- Wait for flasher to be ready before allowing click on 'connect button'
+
 ## 0.9.2
 
 ### Minor Changes
