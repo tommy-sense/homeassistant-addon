@@ -1,5 +1,11 @@
 # TOMMY
 
+## 0.9.2
+
+### Minor Changes
+
+- Added path prefix to flash image fetching in ingress
+
 ## 0.9.1
 
 ### Minor Changes
