@@ -1,5 +1,11 @@
 # TOMMY
 
+## 0.9.1
+
+### Minor Changes
+
+- Added path prefix to configuration fetching in ingress
+
 ## 0.9.0
 
 ### Major Changes
