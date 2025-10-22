@@ -1,5 +1,11 @@
 # TOMMY
 
+## 0.10.1
+
+### Minor Changes
+
+- Added trailing slash to websocket uri
+
 ## 0.10.0
 
 ### Major Changes
