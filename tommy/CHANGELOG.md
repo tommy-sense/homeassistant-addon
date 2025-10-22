@@ -1,5 +1,15 @@
 # TOMMY
 
+## 0.10.0
+
+### Major Changes
+
+- Move websocket server to dashboard to avoid mixed content errors on instances running behind DNS.
+
+### Minor Changes
+
+- Lowered log level in Caddy from INFO to WARN
+
 ## 0.9.3
 
 ### Minor Changes
