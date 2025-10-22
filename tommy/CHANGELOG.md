@@ -1,5 +1,11 @@
 # TOMMY
 
+## 0.10.4
+
+### Minor Changes
+
+- Allow incoming ws request on ingress path
+
 ## 0.10.3
 
 ### Minor Changes
