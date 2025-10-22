@@ -1,5 +1,11 @@
 # TOMMY
 
+## 0.10.2
+
+### Minor Changes
+
+- Add ingress path to ws path
+
 ## 0.10.1
 
 ### Minor Changes
