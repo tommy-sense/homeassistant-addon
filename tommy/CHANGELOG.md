@@ -1,5 +1,11 @@
 # TOMMY
 
+## 0.10.5
+
+### Minor Changes
+
+- ESPHome as compile flag instead of runtime variable
+
 ## 0.10.4
 
 ### Minor Changes
