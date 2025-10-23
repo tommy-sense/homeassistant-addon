@@ -1,5 +1,12 @@
 # TOMMY
 
+## 0.11.2
+
+### Minor Changes
+
+- Removed error logging for devices in zones with no other devices
+- Added default refresh interval to ESPHome YAML configurations
+
 ## 0.11.1
 
 ### Minor Changes
