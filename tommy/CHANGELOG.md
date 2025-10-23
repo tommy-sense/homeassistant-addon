@@ -1,5 +1,11 @@
 # TOMMY
 
+## 0.10.6
+
+### Minor Changes
+
+- Added default to ingress path
+
 ## 0.10.5
 
 ### Minor Changes
