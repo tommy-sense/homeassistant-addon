@@ -1,5 +1,11 @@
 # TOMMY
 
+## 0.11.0
+
+### Major Changes
+
+- Algorithm improvements to lower false positives outside the zone perimeter
+
 ## 0.10.6
 
 ### Minor Changes
