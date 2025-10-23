@@ -1,5 +1,11 @@
 # TOMMY
 
+## 0.11.1
+
+### Minor Changes
+
+- Improved webserial error in sensor debugger
+
 ## 0.11.0
 
 ### Major Changes
