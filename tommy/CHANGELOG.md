@@ -1,5 +1,11 @@
 # TOMMY
 
+## 0.14.1
+
+### Minor Changes
+
+- Fixed bug where devices are duplicated across zone devices and available devices.
+
 ## 0.14.0
 
 ### Minor Changes
