@@ -1,5 +1,12 @@
 # TOMMY
 
+## 0.15.0
+
+### Major Changes
+
+- Resolved a critical bug that prevented Matter devices from being paired after a 15-minute timeout period
+- Matter devices now automatically use the assigned zone name as their device identifier
+
 ## 0.14.2
 
 ### Minor Changes
