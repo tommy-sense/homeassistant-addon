@@ -1,5 +1,11 @@
 # TOMMY
 
+## 0.14.2
+
+### Minor Changes
+
+- Fixed stack overflow in OTA process on ESP32-S3
+
 ## 0.14.1
 
 ### Minor Changes
