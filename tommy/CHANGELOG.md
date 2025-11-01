@@ -1,5 +1,16 @@
 # TOMMY
 
+## 0.17.0
+
+### Major Changes
+
+- Use prebuilt images in Home Assistant Add-on for faster installation
+- Use Node 24 for virtual bridge
+
+### Minor Changes
+
+- Simplified raw signal analyzer
+
 ## 0.16.0
 
 ### Major Changes
