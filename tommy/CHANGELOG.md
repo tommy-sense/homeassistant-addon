@@ -1,5 +1,17 @@
 # TOMMY
 
+## 0.19.0
+
+### Major Changes
+
+- Added performance modes
+- Improvements to detection algorithm
+
+### Minor Changes
+
+- Show status when OTA is in progress
+- Performance improvements
+  
 ## 0.18.0
 
 ### Major Changes
