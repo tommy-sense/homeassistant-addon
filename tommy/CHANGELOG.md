@@ -1,5 +1,11 @@
 # TOMMY
 
+## 0.19.2
+
+### Minor Changes
+
+- Improved algorithm for 'High Performance' mode
+
 ## 0.19.1
 
 ### Minor Changes
