@@ -1,5 +1,11 @@
 # TOMMY
 
+## 0.19.1
+
+### Minor Changes
+
+- Scale raw signal
+
 ## 0.19.0
 
 ### Major Changes
