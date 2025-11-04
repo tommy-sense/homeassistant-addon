@@ -1,5 +1,15 @@
 # TOMMY
 
+## 0.20.0
+
+### Major Changes
+
+- Added Boundary Mode
+
+### Minor Changes
+
+- UI changes
+
 ## 0.19.2
 
 ### Minor Changes
