@@ -27,7 +27,6 @@ options:
     file_server_https: 8091
     mqtt: 1886
     udp_relay: 8547
-  license:
 schema:
   ports:
     dashboard: port
