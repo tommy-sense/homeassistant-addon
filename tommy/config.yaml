@@ -34,5 +34,6 @@ schema:
     file_server_https: port
     mqtt: port
     udp_relay: port
+  license:
     license_key: str?
     machine_certificate: str?
