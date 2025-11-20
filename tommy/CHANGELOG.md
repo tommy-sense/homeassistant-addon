@@ -1,5 +1,11 @@
 # TOMMY
 
+## 0.20.8
+
+### Minor Changes
+
+- Fixed a problem with sensor fusion that could cause degraded motion detection under some specific network conditions
+
 ## 0.20.7
 
 ### Minor Changes
