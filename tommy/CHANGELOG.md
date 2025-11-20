@@ -1,5 +1,11 @@
 # TOMMY
 
+## 0.20.5
+
+### Minor Changes
+
+- Moved credentials to root configuration
+
 ## 0.20.4
 
 ### Minor Changes
