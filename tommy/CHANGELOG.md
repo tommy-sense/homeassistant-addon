@@ -1,5 +1,11 @@
 # TOMMY
 
+## 0.20.4
+
+### Minor Changes
+
+- Fixed credentials input
+
 ## 0.20.3
 
 ### Minor Changes

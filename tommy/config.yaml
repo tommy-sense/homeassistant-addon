@@ -1,5 +1,5 @@
 name: TOMMY
-version: "0.20.3"
+version: "0.20.4"
 slug: tommysense-homeassistant-addon
 description: TOMMY (Home Assistant Add-on)
 url: "https://github.com/tommy-sense/homeassistant-addon"
@@ -27,6 +27,7 @@ options:
     file_server_https: 8091
     mqtt: 1886
     udp_relay: 8547
+  license:
 schema:
   ports:
     dashboard: port
@@ -35,5 +36,5 @@ schema:
     mqtt: port
     udp_relay: port
   license:
-    license_key: str?
-    machine_certificate: str?
+    license_key: "str?"
+    machine_certificate: "str?"
