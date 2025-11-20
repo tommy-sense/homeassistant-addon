@@ -1,5 +1,11 @@
 # TOMMY
 
+## 0.20.6
+
+### Minor Changes
+
+- Update to internal credentials manager
+
 ## 0.20.5
 
 ### Minor Changes
