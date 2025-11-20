@@ -1,5 +1,13 @@
 # TOMMY
 
+## 0.20.3
+
+### Minor Changes
+
+- Changed default dashboard port to 8089
+- Changed default MQTT port to 1886
+- Added configuration options for license
+
 ## 0.20.2
 
 ### Minor Changes
