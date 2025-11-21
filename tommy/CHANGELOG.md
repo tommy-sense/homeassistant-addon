@@ -1,5 +1,14 @@
 # TOMMY
 
+
+## 0.21.1
+
+### Minor Changes
+
+- Allow toggling new false positive filter
+- Fixed issues with machine ID overflowing screen
+- Fixed issue with motion being detection at threshold instead of above
+
 ## 0.21.0
 
 ### Major Changes
