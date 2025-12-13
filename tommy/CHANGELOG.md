@@ -1,5 +1,12 @@
 # TOMMY
 
+## 0.24.0
+
+### Major Changes
+- Added hold time support
+- Added option for online license activation
+- BREAKING CHANGE: Offline license activation is no longer supported for Docker installations. After careful consideration, we have determined that the license server solution has become too complex to maintain and support. If you were using the license server, you can remove it using `sudo dpkg -r tommy-license-server`. Docker installation users can switch to online activation, or use the Home Assistant Add-on for offline activation. If neither option works for your setup, we recommend staying on version 0.23.0. We apologize for any inconvenience this may cause.
+
 ## 0.23.0
 
 ### Major Changes
