@@ -1,5 +1,11 @@
 # TOMMY
 
+## 0.24.1
+
+### Minor Changes
+
+- Fixed missing default for hold time, which could cause crashes
+
 ## 0.24.0
 
 ### Major Changes
