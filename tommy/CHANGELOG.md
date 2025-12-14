@@ -1,5 +1,11 @@
 # TOMMY
 
+## 0.25.2
+
+### Minor Changes
+
+- Improvements to detection algorithm
+
 ## 0.25.1
 
 ### Minor Changes
