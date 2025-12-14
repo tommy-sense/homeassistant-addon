@@ -1,5 +1,12 @@
 # TOMMY
 
+## 0.25.1
+
+### Minor Changes
+
+- Fixed mismatched glibc crash
+- Included hold time in total motion statistics
+
 ## 0.25.0
 
 ### Major Changes
