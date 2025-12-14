@@ -1,5 +1,10 @@
 # TOMMY
 
+## 0.25.0
+
+### Major Changes
+- Internal preparations for native Home Assistant Integration
+
 ## 0.24.3
 
 ### Minor Changes
