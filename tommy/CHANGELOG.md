@@ -1,5 +1,11 @@
 # TOMMY
 
+## 1.0.1
+
+### Minor Changes
+
+- Removed 'Tips' button and replaced with 'Device Placement Guide' in header
+
 ## 1.0.0
 
 ### Major Changes
