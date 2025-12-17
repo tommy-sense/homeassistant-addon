@@ -1,5 +1,11 @@
 # TOMMY
 
+## 1.0.3
+
+### Minor Changes
+
+- Minor UI improvements
+
 ## 1.0.2
 
 ### Minor Changes
