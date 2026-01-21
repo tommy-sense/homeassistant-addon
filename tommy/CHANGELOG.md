@@ -1,5 +1,11 @@
 # TOMMY
 
+## 1.4.1
+
+### Minor Changes
+- Fixed a bug causing Wi-Fi connection issues with C6 devices
+- **ESPHome users: Please update your devices with the latest TOMMY firmware**
+
 ## 1.4.0
 
 ### Major Changes
