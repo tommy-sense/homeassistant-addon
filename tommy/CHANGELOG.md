@@ -1,5 +1,12 @@
 # TOMMY
 
+## 1.5.4
+
+### Minor Changes
+- Fixed a bug where larger configurations resulted in an error on the ESP32
+- Removed the OTA loop and replaced it with a single OTA at TOMMY server startup
+- **ESPHome users: Please update your devices with the latest TOMMY firmware**
+
 ## 1.5.3
 
 ### Minor Changes
