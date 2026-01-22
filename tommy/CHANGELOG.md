@@ -1,5 +1,10 @@
 # TOMMY
 
+## 1.5.3
+
+### Minor Changes
+- Fixed a bug causing some devices to enter bootloop if BSSID was not set
+
 ## 1.5.2
 
 ### Minor Changes
