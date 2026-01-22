@@ -1,5 +1,12 @@
 # TOMMY
 
+## 1.5.2
+
+### Minor Changes
+- Fixed a bug which could cause a crash when sending a heartbeat from ESP32s
+- Updated documentation regarding usage of BSSID when flashing through ESPHome
+- **ESPHome users: Please update your devices with the latest TOMMY firmware**
+
 ## 1.5.1
 
 ### Minor Changes
