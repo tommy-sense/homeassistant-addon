@@ -1,5 +1,16 @@
 # TOMMY
 
+## 1.5.0
+
+### Major Changes
+- Added ability to enter BSSID during provisioning to pin devices in a zone to the same access point. This is required for mesh networks. Please refer to the [information about mesh networks](https://tommysense.com/docs/system-requirements) in system requirements.
+- **ESPHome users: Please update your devices with the latest TOMMY firmware**
+
+### Minor Changes
+- Now shows a warning if multiple access points are detected in a zone
+- Fixed bug where a disconnected device during initialization would cause the rest of the devices to halt packet processing
+- Updated the documentation with information about how to use HACS to install the Home Assistant integration
+
 ## 1.4.1
 
 ### Minor Changes
