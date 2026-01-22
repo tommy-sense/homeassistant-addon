@@ -1,5 +1,10 @@
 # TOMMY
 
+## 1.5.1
+
+### Minor Changes
+- Increased timeout before disabling a node
+
 ## 1.5.0
 
 ### Major Changes
