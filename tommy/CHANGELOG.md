@@ -1,5 +1,10 @@
 # TOMMY
 
+## 2.0.2
+
+### Minor Changes
+- Minor improvements to motion detection for ESP32 and ESP32-C3
+
 ## 2.0.1
 
 ### Minor Changes
