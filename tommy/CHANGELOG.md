@@ -1,5 +1,10 @@
 # TOMMY
 
+## 2.0.1
+
+### Minor Changes
+- Fixed missing version number in dashboard
+
 ## 2.0.0
 
 ### Major Changes
