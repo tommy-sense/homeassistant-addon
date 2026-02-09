@@ -1,5 +1,10 @@
 # TOMMY
 
+## 2.1.0
+
+### Major Changes
+- Performance and stability improvements
+
 ## 2.0.2
 
 ### Minor Changes
