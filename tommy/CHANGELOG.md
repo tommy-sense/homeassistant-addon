@@ -1,5 +1,10 @@
 # TOMMY
 
+## 2.2.2
+
+### Minor Changes
+- Fixed a bug causing the zone selector to be hidden when no zones were added
+
 ## 2.2.1
 
 ### Minor Changes
