@@ -1,5 +1,10 @@
 # TOMMY
 
+## 2.2.3
+
+### Minor Changes
+- Improved error handling in Matter Occupancy Sensor
+
 ## 2.2.2
 
 ### Minor Changes
