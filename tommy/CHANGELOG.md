@@ -1,5 +1,11 @@
 # TOMMY
 
+## 2.2.1
+
+### Minor Changes
+- Improved false positive filtering
+- Switched to fast scan for WiFi connections
+
 ## 2.2.0
 
 ### Major Changes
