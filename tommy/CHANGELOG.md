@@ -1,5 +1,10 @@
 # TOMMY
 
+## 2.2.4
+
+### Minor Changes
+- Fixed socket error in Matter Occupancy Sensor
+
 ## 2.2.3
 
 ### Minor Changes
