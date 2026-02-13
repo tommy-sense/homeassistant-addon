@@ -1,5 +1,11 @@
 # TOMMY
 
+## 2.2.6
+
+### Minor Changes
+- Improved false positives filtering
+- Fixed a bug causing high motion level when a disabled pair was re-enabled
+
 ## 2.2.5
 
 ### Minor Changes
