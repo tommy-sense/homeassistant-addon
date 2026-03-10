@@ -1,5 +1,10 @@
 # TOMMY
 
+## 2.6.3
+
+### Minor Changes
+- Fixed an issue causing UDP connection from server to device to fail in some cases
+
 ## 2.6.2
 
 ### Minor Changes
