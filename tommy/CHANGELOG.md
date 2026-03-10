@@ -1,5 +1,15 @@
 # TOMMY
 
+## 2.6.0
+
+### Major Changes
+- Added the option to reconfigure devices from the dashboard without needing a reflash
+
+### Minor Changes
+- A warning is now shown when the server can't reach the device
+- Fixed a bug causing some devices not to be discovered
+- Minor UI fixes
+
 ## 2.5.0
 
 ### Major Changes
