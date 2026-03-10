@@ -1,5 +1,10 @@
 # TOMMY
 
+## 2.6.1
+
+### Minor Changes
+- Fixed a bug causing devices to stay disconnected in some cases
+
 ## 2.6.0
 
 ### Major Changes
