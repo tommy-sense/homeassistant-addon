@@ -1,5 +1,10 @@
 # TOMMY
 
+## 2.6.2
+
+### Minor Changes
+- Improved error handling during heartbeat parsing
+
 ## 2.6.1
 
 ### Minor Changes
