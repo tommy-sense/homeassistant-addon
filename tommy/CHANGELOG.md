@@ -1,5 +1,10 @@
 # TOMMY
 
+## 2.7.1
+
+### Minor Changes
+- Minor UI improvements
+
 ## 2.7.0
 
 ### Major Changes
