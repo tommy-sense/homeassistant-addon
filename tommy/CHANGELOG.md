@@ -1,5 +1,12 @@
 # TOMMY
 
+## 2.8.1
+
+### Minor Changes
+- Fixed an issue with http_client being undefined in ESPHome 2026.2.4
+- Fixed a reachability status bug
+- Removed redundant logging of unknown udp packets
+
 ## 2.8.0
 
 ### Major Changes
