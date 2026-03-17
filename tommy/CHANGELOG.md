@@ -1,5 +1,14 @@
 # TOMMY
 
+## 2.8.0
+
+### Major Changes
+- Performance improvements
+
+### Minor Changes
+- Improvements to Online Coordination 
+- UI improvements
+
 ## 2.7.1
 
 ### Minor Changes
