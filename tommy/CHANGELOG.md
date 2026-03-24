@@ -1,5 +1,10 @@
 # TOMMY
 
+## 2.10.1
+
+### Minor Changes
+- Bug fixes
+
 ## 2.10.0
 
 ### Major Changes
