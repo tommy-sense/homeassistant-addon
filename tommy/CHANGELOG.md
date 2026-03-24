@@ -1,5 +1,10 @@
 # TOMMY
 
+## 2.10.0
+
+### Major Changes
+- Allow disabling HA integration through environment variable
+
 ## 2.9.0
 
 ### Major Changes
