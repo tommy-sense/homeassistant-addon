@@ -1,5 +1,10 @@
 # TOMMY
 
+## 3.0.0
+
+### Major Changes
+- **Breaking change:** Community Edition has been deprecated in favor of Trial Mode
+
 ## 2.10.6
 
 ### Minor Changes
