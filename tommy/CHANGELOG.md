@@ -1,5 +1,10 @@
 # TOMMY
 
+## 3.1.2
+
+### Minor Changes
+- Minor bug fixes
+
 ## 3.1.1
 
 ### Minor Changes
