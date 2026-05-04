@@ -1,5 +1,10 @@
 # TOMMY
 
+## 3.1.1
+
+### Minor Changes
+- Fixed "Cannot find module 'next'" bug
+
 ## 3.1.0
 
 ### Major Changes
