@@ -1,5 +1,14 @@
 # TOMMY
 
+## 3.1.0
+
+### Major Changes
+- Switched to zoned pricing
+- Configuration Editor added
+
+### Minor Changes
+- mDNS improvements
+
 ## 3.0.2
 
 ### Minor Changes
