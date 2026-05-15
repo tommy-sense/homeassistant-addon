@@ -1,5 +1,5 @@
 name: TOMMY
-version: "3.1.5"
+version: "3.1.6"
 slug: tommysense-homeassistant-addon
 description: Self-hosted Wi-Fi sensing for presence and motion detection. Runs on ESP32.
 url: "https://github.com/tommy-sense/homeassistant-addon"
