@@ -1,7 +1,7 @@
 name: TOMMY
 version: "3.1.5"
 slug: tommysense-homeassistant-addon
-description: TOMMY (Home Assistant Add-on)
+description: Self-hosted Wi-Fi sensing for presence and motion detection. Runs on ESP32. Integrates with Home Assistant and Matter.
 url: "https://github.com/tommy-sense/homeassistant-addon"
 arch:
   - aarch64
