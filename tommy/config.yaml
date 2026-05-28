@@ -1,5 +1,5 @@
 name: TOMMY
-version: "4.0.1"
+version: "5.0.0"
 slug: tommysense-homeassistant-addon
 description: Self-hosted Wi-Fi sensing for presence and motion detection. Runs on ESP32.
 url: "https://github.com/tommy-sense/homeassistant-addon"
@@ -9,8 +9,6 @@ arch:
 image: tommysense/homeassistant-addon-{arch}
 startup: application
 boot: auto
-hassio_role: default
-hassio_api: true
 host_network: true # Needed for mDNS discovery
 apparmor: true
 ingress: true
