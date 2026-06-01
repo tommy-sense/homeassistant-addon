@@ -1,5 +1,10 @@
 # TOMMY
 
+## 5.0.6
+
+### Minor Changes
+- Fixed an issue where the Home Assistant loading screen was cached, causing it to keep showing even after the dashboard was ready
+
 ## 5.0.5
 
 ### Minor Changes
