@@ -1,5 +1,11 @@
 # TOMMY
 
+## 5.0.5
+
+### Minor Changes
+- Removed the automatic page reload during the loading state
+- Added a background color to the logo in Home Assistant for compatibility with light themes
+
 ## 5.0.4
 
 ### Minor Changes
