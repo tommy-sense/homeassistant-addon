@@ -1,5 +1,10 @@
 # TOMMY
 
+## 5.0.4
+
+### Minor Changes
+- Updated AppArmor for the Home Assistant App
+
 ## 5.0.3
 
 ### Minor Changes
