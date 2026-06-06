@@ -1,5 +1,12 @@
 # TOMMY
 
+## 5.2.0
+
+### Minor Changes
+- Improved TOMMY flasher and provisioner process
+- ESPHome component now requires an explicit `discovery` field (`mdns` or `manual`).
+- Fixed an issue causing devices to fail connecting to the server using mDNS
+
 ## 5.1.0
 
 ### Major Changes
