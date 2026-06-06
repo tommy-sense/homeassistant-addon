@@ -1,5 +1,10 @@
 # TOMMY
 
+## 5.2.1
+
+### Minor Changes
+- Fixed a bug causing the webserial tool to wait for heartbeats
+
 ## 5.2.0
 
 ### Minor Changes
