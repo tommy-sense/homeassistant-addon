@@ -1,5 +1,11 @@
 # TOMMY
 
+## 5.3.0
+
+### Major Changes
+- Added a settings menu in the dashboard.
+- Option to disable discovery methods
+
 ## 5.2.1
 
 ### Minor Changes
