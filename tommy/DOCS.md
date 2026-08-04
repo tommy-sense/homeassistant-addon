@@ -1,4 +1,4 @@
-# TOMMY (Home Assistant Add-on)
+# TOMMY
 
 ## Configure the Add-on
 
