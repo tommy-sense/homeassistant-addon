@@ -1,5 +1,10 @@
 # TOMMY
 
+## 6.0.2
+
+### Minor Changes
+- Updated dependencies
+
 ## 6.0.1
 
 ### Minor Changes
