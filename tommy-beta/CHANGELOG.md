@@ -1,5 +1,10 @@
 # TOMMY
 
+## 6.0.3
+
+### Minor Changes
+- Fixed an error in the Home Assistant App ingress URL
+
 ## 6.0.2
 
 ### Minor Changes
