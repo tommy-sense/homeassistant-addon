@@ -43,7 +43,8 @@ profile tommysense-homeassistant-addon-beta flags=(attach_disconnected,mediate_d
   # confined profile they share.
   /usr/bin/caddy cx -> caddy_service,
   /usr/bin/node cx -> tommy,
-  /app/compute-engine/compute-engine-* cx -> tommy,
+  /app/compute-engine/compute-engine-x64 cx -> tommy,
+  /app/compute-engine/compute-engine-arm64 cx -> tommy,
 
   profile caddy_service flags=(attach_disconnected,mediate_deleted) {
     #include <abstractions/base>
