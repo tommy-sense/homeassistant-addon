@@ -1,5 +1,10 @@
 # TOMMY
 
+## 6.0.1
+
+### Minor Changes
+- Fixed a bug causing OTA images to return 404
+
 ## 6.0.0
 
 ### Major Changes
