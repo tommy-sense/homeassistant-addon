@@ -1,10 +1,8 @@
-# TOMMY
+# TOMMY (beta)
 
-This is the Home Assistant add-on for TOMMY, a Wi-Fi sensing system that turns ESP32 devices into presence sensors capable of detecting movement through walls and obstacles.
+This is the beta version (pre-release builds for early testing) of the Home Assistant add-on for TOMMY, a Wi-Fi sensing system that turns ESP32 devices into presence sensors capable of detecting movement through walls and obstacles.
 
 The add-on integrates TOMMY directly into your Home Assistant instance, allowing you to create zones for use with your existing automations. All processing happens locally on your network.
-
-This repository provides two add-ons: **TOMMY** and **TOMMY (beta)** (experimental, for trying pre-release versions).
 
 **Get started:** [Installation Guide](https://www.tommysense.com/docs/installation/homeassistant)  
 **Learn more:** [Full Documentation](https://www.tommysense.com/docs)
