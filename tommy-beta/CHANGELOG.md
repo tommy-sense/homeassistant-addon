@@ -1,6 +1,6 @@
 # TOMMY
 
-## 6.0.0-beta.1
+## 6.0.0
 
 ### Major Changes
 - **Breaking change:** Boundary modes have been replaced with algorithm selection. Pick an appropriate algorithm and recalibrate your threshold.

@@ -38,10 +38,13 @@ profile tommysense-homeassistant-addon flags=(attach_disconnected,mediate_delete
   # Data directory
   /data/** rw,
 
-  # Start profiles for services
+  # Start profiles for services. The two app processes are exec'd directly by
+  # their s6 run scripts, so each entry point needs its own transition into the
+  # confined profile they share.
   /usr/bin/caddy cx -> caddy_service,
-  /app/start.sh cx -> tommy,
   /usr/bin/node cx -> tommy,
+  /app/compute-engine/compute-engine-x64 cx -> tommy,
+  /app/compute-engine/compute-engine-arm64 cx -> tommy,
 
   profile caddy_service flags=(attach_disconnected,mediate_deleted) {
     #include <abstractions/base>

@@ -1,15 +1,16 @@
 name: TOMMY
-version: "5.4.0"
+version: "6.0.0"
 slug: tommysense-homeassistant-addon
 description: Presence detection using Wi-Fi sensing. Runs on ESP32
 url: "https://github.com/tommy-sense/homeassistant-addon"
 arch:
   - aarch64
   - amd64
-image: tommysense/homeassistant-addon-{arch}
+image: tommysense/virtual-bridge
 startup: application
 boot: auto
-host_network: true # Needed for mDNS discovery
+stage: stable
+host_network: true
 apparmor: true
 ingress: true
 ingress_port: 0
@@ -32,5 +33,3 @@ schema:
     file_server_https: port
     mqtt: port
     udp_relay: port
-  license_key: "str?"
-  machine_certificate: "str?"

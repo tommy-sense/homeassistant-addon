@@ -1,5 +1,24 @@
 # TOMMY
 
+## 6.0.0
+
+### Major Changes
+- **Breaking change:** Boundary modes have been replaced with algorithm selection. Pick an appropriate algorithm and recalibrate your threshold.
+- **Breaking change:** The ESPHome component is now downloaded from the TOMMY server instead of GitHub. The firmware is bundled into the server so that firmware and server always stay in sync. Update the `external_components` source in your ESPHome YAML to a git source with url `http://homeassistant.local:8090/tommy-esphome` and ref `main` (the full snippet is in the docs).
+- **Breaking change:** The Matter integration has been rebuilt on a new implementation. Zones that were paired with a Matter controller (Apple Home, Google Home, Alexa, etc.) before this release must be removed from the controller and paired again. Zone names, pairing flow and behavior are unchanged.
+- **Breaking change:** The Home Assistant and Matter integration toggles are now zone specific instead of global, and both default to off. The previous global settings (including Home Assistant, which used to be enabled by default) no longer apply: enable each integration in the zone's Integrations section for every zone you want to expose.
+- Redesigned the dashboard around a sidebar and dedicated pages.
+- Significantly simplified ESPHome flashing. TOMMY now applies the required ESP-IDF and Wi-Fi settings automatically during compilation.
+- Added network topology selection (star or mesh) to optimize network impact.
+- Substantially reduced TOMMY's network impact
+- Improved overall performance.
+
+### Minor Changes
+- Added a page showing the network impact of using TOMMY
+- Added per-link network stats in Signal Visualizer
+- Rewrote the device placement guide, with illustrated advice in the dashboard
+- Version check now runs automatically on dashboard load and shows whether you are up to date or a new version is available
+
 ## 5.4.0
 
 ### Major Changes
