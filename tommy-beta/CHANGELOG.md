@@ -1,5 +1,14 @@
 # TOMMY
 
+## 6.1.0
+
+### Major Changes
+- Presence threshold can now be either simple (one value) or enter/exit
+
+### Minor Changes
+- Presence chart now shows remaining hold time as a countdown while a zone is holding
+- Added a first-run setup checklist overlay on the dashboard
+
 ## 6.0.4
 
 ### Minor Changes
