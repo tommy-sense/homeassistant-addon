@@ -1,5 +1,10 @@
 # TOMMY
 
+## 6.1.2
+
+### Minor Changes
+- Bug fixes
+
 ## 6.1.1
 
 ### Minor Changes
