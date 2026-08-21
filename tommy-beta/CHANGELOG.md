@@ -1,5 +1,11 @@
 # TOMMY
 
+## 6.1.1
+
+### Minor Changes
+- Presence threshold and hold time now lives under a tuning section which has a simple and expert mode
+- Added explainers to threshold and hold time.
+
 ## 6.1.0
 
 ### Major Changes

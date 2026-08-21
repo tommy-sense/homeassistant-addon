@@ -1,5 +1,5 @@
 name: TOMMY (beta)
-version: "6.1.0"
+version: "6.1.1"
 slug: tommysense-homeassistant-addon-beta
 description: Presence detection using Wi-Fi sensing. Runs on ESP32
 url: "https://github.com/tommy-sense/homeassistant-addon"
