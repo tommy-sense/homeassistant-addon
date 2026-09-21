@@ -1,5 +1,10 @@
 # TOMMY
 
+## 6.1.3
+
+### Minor Changes
+- Fixed incompatibility with ESPHome 2026.9.0
+
 ## 6.1.2
 
 ### Minor Changes
