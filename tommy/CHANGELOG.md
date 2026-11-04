@@ -1,53 +1,87 @@
 # TOMMY
 
+## 7.0.0
+
+### Major Changes
+
+- **Breaking change:** ESPHome 2026.10.0 is now required
+- **Breaking change:** New installations no longer get a trial license automatically. Get a free trial key at https://www.tommysense.com/zero/trial and enter it under Settings > License. Existing installations keep their license key
+- Added shared sensor support
+- Added an option to force 2.4GHz or 5GHz on the ESP32-C5
+- Added signal stabilization
+- Serial provisioning has been removed. You now enter the network details in the flasher, and they are written to the device together with the firmware
+
+### Minor Changes
+
+- Dashboard now shows the full Wi-Fi channel utilization, split between TOMMY and other traffic
+- Improvements to detection algorithm
+- UI improvements
+- Replaced topology selection with a lower performance mode
+- Removed device placement guide
+- License checks now include the number of connected devices (a count only, see the privacy policy)
+- The dashboard now only shows the start and end of the license key
+- Devices no longer print the Wi-Fi password or pairing code in their logs
+- The dashboard now only accepts connections from its own address. If you open it through a reverse proxy that changes the host name, add the address you open it on (for example `https://tommy.example.com`) under Allowed origins in the Home Assistant App configuration, or in the `ALLOWED_ORIGINS` environment variable for Docker
+- Fixed a security issue where a website open in your browser could change TOMMY's configuration and read your license key and pairing code through the dashboard. Thanks to Dakura for reporting this
+
 ## 6.1.3
 
 ### Minor Changes
+
 - Fixed incompatibility with ESPHome 2026.9.0
 
 ## 6.1.2
 
 ### Minor Changes
+
 - Bug fixes
 
 ## 6.1.1
 
 ### Minor Changes
+
 - Presence threshold and hold time now lives under a tuning section which has a simple and expert mode
 - Added explainers to threshold and hold time.
 
 ## 6.1.0
 
 ### Major Changes
+
 - Presence threshold can now be either simple (one value) or enter/exit
 
 ### Minor Changes
+
 - Presence chart now shows remaining hold time as a countdown while a zone is holding
 - Added a first-run setup checklist overlay on the dashboard
 
 ## 6.0.4
 
 ### Minor Changes
+
 - Bug fixes
 
 ## 6.0.3
 
 ### Minor Changes
+
 - Fixed an error in the Home Assistant App ingress URL
 
 ## 6.0.2
 
 ### Minor Changes
+
 - Updated dependencies
 
 ## 6.0.1
 
 ### Minor Changes
+
 - Fixed a bug causing OTA images to return 404
 
 ## 6.0.0
 
 ### Major Changes
+
 - **Breaking change:** Boundary modes have been replaced with algorithm selection. Pick an appropriate algorithm and recalibrate your threshold.
 - **Breaking change:** The ESPHome component is now downloaded from the TOMMY server instead of GitHub. The firmware is bundled into the server so that firmware and server always stay in sync. Update the `external_components` source in your ESPHome YAML to a git source with url `http://homeassistant.local:8090/tommy-esphome` and ref `main` (the full snippet is in the docs).
 - **Breaking change:** The Matter integration has been rebuilt on a new implementation. Zones that were paired with a Matter controller (Apple Home, Google Home, Alexa, etc.) before this release must be removed from the controller and paired again. Zone names, pairing flow and behavior are unchanged.
@@ -59,6 +93,7 @@
 - Improved overall performance.
 
 ### Minor Changes
+
 - Added a page showing the network impact of using TOMMY
 - Added per-link network stats in Signal Visualizer
 - Rewrote the device placement guide, with illustrated advice in the dashboard
@@ -67,22 +102,26 @@
 ## 5.4.0
 
 ### Major Changes
+
 - Added an option to switch between the in-built and external antenna when using the Seeed Studio XIAO ESP32C6
 
 ## 5.3.0
 
 ### Major Changes
+
 - Added a settings menu in the dashboard.
 - Option to disable discovery methods
 
 ## 5.2.1
 
 ### Minor Changes
+
 - Fixed a bug causing the webserial tool to wait for heartbeats
 
 ## 5.2.0
 
 ### Minor Changes
+
 - Improved TOMMY flasher and provisioner process
 - ESPHome component now requires an explicit `discovery` field (`mdns` or `manual`).
 - Fixed an issue causing devices to fail connecting to the server using mDNS
@@ -90,31 +129,37 @@
 ## 5.1.0
 
 ### Major Changes
+
 - Added a WebSerial tool at webserial.tommysense.com for flashing and sensor debugging from browsers without WebSerial access. The dashboard now shows the pairing code alongside the link when WebSerial is unavailable.
 
 ### Minor Changes
+
 - Added a connection screen to the flashing flow prompting to connect the device and enter Firmware Download Mode before flashing
 - Simplified the provisioning flow
 
 ## 5.0.6
 
 ### Minor Changes
+
 - Fixed an issue where the Home Assistant loading screen was cached, causing it to keep showing even after the dashboard was ready
 
 ## 5.0.5
 
 ### Minor Changes
+
 - Removed the automatic page reload during the loading state
 - Added a background color to the logo in Home Assistant for compatibility with light themes
 
 ## 5.0.4
 
 ### Minor Changes
+
 - Updated AppArmor for the Home Assistant App
 
 ## 5.0.3
 
 ### Minor Changes
+
 - Fixed an issue causing the Home Assistant App dashboard to show an error until the server was fully started
 - Fixed an issue where a power loss could cause the license to be invalid until the next heartbeat
 - Fixed an error causing the license heartbeat to deadlock and require a restart
@@ -123,133 +168,158 @@
 ## 5.0.2
 
 ### Minor Changes
-- Improved error message when a stale fingerprint is detected
 
+- Improved error message when a stale fingerprint is detected
 
 ## 5.0.1
 
 ### Minor Changes
+
 - Improved error message when mesh networks are detected
 
 ## 5.0.0
 
 ### Major Changes
+
 - Performance improvements
 - **Breaking change:** Offline licenses are no longer supported. Existing offline license holders are moved to Trial Mode and prompted to switch to online license activation. If you can't switch and previously purchased a Pro Edition license, email info@tommysense.com or reach out on Discord for a refund.
 
 ### Minor Changes
+
 - Removed dependency on Home Assistant Supervisor
 
 ## 4.0.1
 
 ### Minor Changes
+
 - Fixed a bug where the QR code for the Matter integration wasn't shown when trial mode was paused.
 
 ## 4.0.0
 
 ### Major Changes
+
 - New dashboard UI
 - **Breaking change:** Matter integration is now disabled by default. It can be enabled in the dashboard.
 
 ## 3.1.6
 
 ### Minor Changes
+
 - Minor UI improvements
 
 ## 3.1.5
 
 ### Minor Changes
+
 - Minor UI improvements
 
 ## 3.1.4
 
 ### Minor Changes
+
 - Updated logo
 - Added logo and icons to Home Assistant App repo
 
 ## 3.1.3
 
 ### Minor Changes
+
 - Minor UI improvements
 
 ## 3.1.2
 
 ### Minor Changes
+
 - Minor bug fixes
 
 ## 3.1.1
 
 ### Minor Changes
+
 - Fixed "Cannot find module 'next'" bug
 
 ## 3.1.0
 
 ### Major Changes
+
 - Switched to zoned pricing
 - Configuration Editor added
 
 ### Minor Changes
+
 - mDNS improvements
 
 ## 3.0.2
 
 ### Minor Changes
+
 - UI improvements
 
 ## 3.0.1
 
 ### Minor Changes
+
 - UI improvements
 
 ## 3.0.0
 
 ### Major Changes
+
 - **Breaking change:** Community Edition has been deprecated in favor of Trial Mode
 
 ## 2.10.6
 
 ### Minor Changes
+
 - UI improvements
 
 ## 2.10.5
 
 ### Minor Changes
+
 - Bug fixes
 
 ## 2.10.4
 
 ### Minor Changes
+
 - UI improvements
 
 ## 2.10.3
 
 ### Minor Changes
+
 - Add instructions to error when a mesh network is detected.
 
 ## 2.10.2
 
 ### Minor Changes
+
 - Fixed a bug causing MQTT to flood logs after activating license
 - UI improvements
 
 ## 2.10.1
 
 ### Minor Changes
+
 - Bug fixes
 
 ## 2.10.0
 
 ### Major Changes
+
 - Allow disabling HA integration through environment variable
 
 ## 2.9.0
 
 ### Major Changes
+
 - Allow disabling Matter through environment variable
 
 ## 2.8.1
 
 ### Minor Changes
+
 - Fixed an issue with http_client being undefined in ESPHome 2026.2.4
 - Fixed a reachability status bug
 - Removed redundant logging of unknown udp packets
@@ -257,25 +327,30 @@
 ## 2.8.0
 
 ### Major Changes
+
 - Performance improvements
 
 ### Minor Changes
-- Improvements to Online Coordination 
+
+- Improvements to Online Coordination
 - UI improvements
 
 ## 2.7.1
 
 ### Minor Changes
+
 - Minor UI improvements
 
 ## 2.7.0
 
 ### Major Changes
+
 - Added a new privacy toggle menu
 - Added a new Coordination Service discovery mode
 - Improvements to mDNS discovery mode
 
 ### Minor Changes
+
 - OTA now uses a rotating self signed SSL certificate
 - Max TX power is now shown in the device info
 - Minor UI improvements
@@ -283,29 +358,35 @@
 ## 2.6.4
 
 ### Minor Changes
+
 - Minor UI improvements
 
 ## 2.6.3
 
 ### Minor Changes
+
 - Fixed an issue causing UDP connection from server to device to fail in some cases
 
 ## 2.6.2
 
 ### Minor Changes
+
 - Improved error handling during heartbeat parsing
 
 ## 2.6.1
 
 ### Minor Changes
+
 - Fixed a bug causing devices to stay disconnected in some cases
 
 ## 2.6.0
 
 ### Major Changes
+
 - Added the option to reconfigure devices from the dashboard without needing a reflash
 
 ### Minor Changes
+
 - A warning is now shown when the server can't reach the device
 - Fixed a bug causing some devices not to be discovered
 - Minor UI fixes
@@ -313,6 +394,7 @@
 ## 2.5.0
 
 ### Major Changes
+
 - Enabled enhanced detection (and presence sensing) on Community Edition
 - Enabled Home Assistant Integration on Community Edition
 - Increased allowed devices on Community Edition from 3 to 4
@@ -320,11 +402,13 @@
 ## 2.4.2
 
 ### Minor Changes
+
 - Minor UI improvements
 
 ## 2.4.1
 
 ### Minor Changes
+
 - Improved WebSocket performance between the server and dashboard
 - Fixed a bug that caused the WebSocket send buffer to grow unbounded during reconnection
 - Minor UI improvements
@@ -333,14 +417,17 @@
 ## 2.4.0
 
 ### Major Changes
+
 - Switched to serial provisioning instead of Wi-Fi provisioning when using the TOMMY Flasher, enabling much faster device flashing
 
 ### Minor Changes
+
 - Added optional max TX power input during device provisioning (dBm, 2–20, rounds to nearest 0.25 dBm)
 
 ## 2.3.0
 
 ### Major Changes
+
 - Reverted ESP-IDF from 5.5.2 to 5.5.1. Version 5.5.2 introduced a memory leak in the WiFi TX buffer, causing intermittent connection issues
 
 > **ESPHome Users:** If you are using the ESPHome integration, please update the `framework` version in your ESPHome configuration from `5.5.2` to `5.5.1`. Please clean the ESPHome build cache first. Refer to the [ESPHome integration docs](https://www.tommysense.com/docs/flashing-devices/esphome) for the updated configuration.
@@ -348,68 +435,81 @@
 ## 2.2.6
 
 ### Minor Changes
+
 - Improved false positives filtering
 - Fixed a bug causing high motion level when a disabled pair was re-enabled
 
 ## 2.2.5
 
 ### Minor Changes
+
 - Show TOMMY version on ESP32 boot
 - Switched WiFi scan to all channels
 
 ## 2.2.4
 
 ### Minor Changes
+
 - Fixed socket error in Matter Occupancy Sensor
 
 ## 2.2.3
 
 ### Minor Changes
+
 - Improved error handling in Matter Occupancy Sensor
 
 ## 2.2.2
 
 ### Minor Changes
+
 - Fixed a bug causing the zone selector to be hidden when no zones were added
 
 ## 2.2.1
 
 ### Minor Changes
+
 - Improved false positive filtering
 - Switched to fast scan for WiFi connections
 
 ## 2.2.0
 
 ### Major Changes
+
 - Improvements to false positive filtering for ESP32-C3. It should now be possible to lower the motion threshold.
 
 ### Minor Changes
+
 - Improved out of memory handling
- 
+
 ## 2.1.0
 
 ### Major Changes
+
 - Performance and stability improvements
 
 ## 2.0.2
 
 ### Minor Changes
+
 - Minor improvements to motion detection for ESP32 and ESP32-C3
 
 ## 2.0.1
 
 ### Minor Changes
+
 - Fixed missing version number in dashboard
 
 ## 2.0.0
 
 ### Major Changes
+
 - Added status indicator for stationary presence detection capabilities (see [requirements](https://www.tommysense.com/docs/detection-mode))
 - Improved motion detection
 - TOMMY version now appears in the dashboard with a button to check for updates; a warning is shown if devices are not on the same version as the server
 - **Breaking change:** It is necessary to flash devices (both TOMMY flasher and ESPHome) again. Please follow the installation instructions carefully, as some parameters have changed. Sorry for the inconvenience.
 
 ### Minor Changes
+
 - Fixed connectivity issues with some devices
 - Fixed an issue where Matter was broadcasting mDNS on all interfaces, causing high CPU usage
 - Decreased max TX power on ESP32-C3 to 8.5 dBm to increase connection stability when using the TOMMY flasher. For ESPHome, TX power can be set in the ESPHome config.
@@ -420,6 +520,7 @@
 ## 1.5.4
 
 ### Minor Changes
+
 - Fixed a bug where larger configurations resulted in an error on the ESP32
 - Removed the OTA loop and replaced it with a single OTA at TOMMY server startup
 - **ESPHome users: Please update your devices with the latest TOMMY firmware**
@@ -427,11 +528,13 @@
 ## 1.5.3
 
 ### Minor Changes
+
 - Fixed a bug causing some devices to enter bootloop if BSSID was not set
 
 ## 1.5.2
 
 ### Minor Changes
+
 - Fixed a bug which could cause a crash when sending a heartbeat from ESP32s
 - Updated documentation regarding usage of BSSID when flashing through ESPHome
 - **ESPHome users: Please update your devices with the latest TOMMY firmware**
@@ -439,15 +542,18 @@
 ## 1.5.1
 
 ### Minor Changes
+
 - Increased timeout before disabling a node
 
 ## 1.5.0
 
 ### Major Changes
+
 - Added ability to enter BSSID during provisioning to pin devices in a zone to the same access point. This is required for mesh networks. Please refer to the [information about mesh networks](https://tommysense.com/docs/system-requirements) in system requirements.
 - **ESPHome users: Please update your devices with the latest TOMMY firmware**
 
 ### Minor Changes
+
 - Now shows a warning if multiple access points are detected in a zone
 - Fixed bug where a disconnected device during initialization would cause the rest of the devices to halt packet processing
 - Updated the documentation with information about how to use HACS to install the Home Assistant integration
@@ -455,28 +561,33 @@
 ## 1.4.1
 
 ### Minor Changes
+
 - Fixed a bug causing Wi-Fi connection issues with C6 devices
 - **ESPHome users: Please update your devices with the latest TOMMY firmware**
 
 ## 1.4.0
 
 ### Major Changes
+
 - Updated the firmware to use ESP-IDF 5.5.2 to match ESPHome version 2026.1.0.
 - **ESPHome users: It is now required to use the latest ESPHome version 2026.1.0**
 - **ESPHome users: Please update your devices with the latest TOMMY firmware**
 
 ### Minor Changes
+
 - Fixed a bug introduced in 1.3.0 causing Wi-Fi connection issues with C6 devices
 
 ## 1.3.0
 
 ### Major Changes
+
 - Added Custom Boundary Mode. This gives you fine-grained control over how different links contribute to the final motion prediction. Great for environments prone to false positives.
 - Removed the option to do manual discovery through the dashboard. This will free up a substantial amount of memory during the startup phase. Please refer to the documentation for other methods of manual discovery.
 - Improved memory usage for ESPHome, which may allow some devices to run the BLE stack (e.g., Bluetooth proxy) alongside TOMMY even without PSRAM
 - **ESPHome users: Please update your devices with the latest TOMMY firmware**
 
 ### Minor Changes
+
 - Fixed a bug causing hold time to not be applied for Matter integrations
 - Fixed a bug causing ESPHome devices to keep restarting if the TOMMY server isn't running during boot
 - Channel information per device is now shown in the dashboard
@@ -485,6 +596,7 @@
 ## 1.2.1
 
 ### Minor Changes
+
 - Fixed a bug causing ESPHome devices to enter bootloop or send wrong relay data
 - Fixed a bug causing ESPHome devices to report IP: 0.0.0.0 in the dashboard
 - **ESPHome users: Please update your devices with the latest TOMMY firmware**
@@ -492,17 +604,20 @@
 ## 1.2.0
 
 ### Major Changes
+
 - Improved motion detection algorithm (both basic and enhanced mode)
 - Allowed High Performance mode for other devices than ESP32-C5
 - **ESPHome users: Please update your devices with the latest TOMMY firmware**
 
 ### Minor Changes
+
 - Improved explanations of the different performance modes
 - Removed experimental "False positive filtering" as it's redundant after the latest improvements to the algorithm
 
 ## 1.1.0
 
 ### Major Changes
+
 - Added Enhanced detection mode alongside the existing Basic detection mode. Enhanced mode is a state-of-the-art detection mode that can capture micro-movements and breathing with optimal device placement. This mode is being developed with the goal of evolving into full stationary presence detection. Enhanced mode is only supported on ESP32-C3, ESP32-C5, ESP32-C6, and ESP32-S3 devices and requires a Pro Edition license.
 
 ### Minor Changes
@@ -543,6 +658,7 @@
 ## 1.0.0
 
 ### Major Changes
+
 - Home Assistant Integration. A button is now added to the dashboard with information on how to install the integration. It automatically keeps TOMMY zones in sync with Home Assistant and exposes a device for each zone with a motion sensor entity. This feature is exclusive to the Pro Edition. The Matter integration is still available for users of the Community Edition.
 
 ### Minor Changes
@@ -553,6 +669,7 @@
 ## 0.26.0
 
 ### Major Changes
+
 - Added a balanced boundary mode, which is now default for new zones
 
 ## 0.25.2
@@ -571,6 +688,7 @@
 ## 0.25.0
 
 ### Major Changes
+
 - Internal preparations for native Home Assistant Integration
 
 ## 0.24.3
@@ -594,6 +712,7 @@
 ## 0.24.0
 
 ### Major Changes
+
 - Added hold time support
 - Added option for online license activation
 - BREAKING CHANGE: Offline license activation is no longer supported for Docker installations. After careful consideration, we have determined that the license server solution has become too complex to maintain and support. If you were using the license server, you can remove it using `sudo dpkg -r tommy-license-server`. Docker installation users can switch to online activation, or use the Home Assistant Add-on for offline activation. If neither option works for your setup, we recommend staying on version 0.23.0. We apologize for any inconvenience this may cause.
@@ -601,6 +720,7 @@
 ## 0.23.0
 
 ### Major Changes
+
 - Improvements to motion detection algorithm
 
 ### Minor Changes
@@ -741,7 +861,7 @@
 
 - Show status when OTA is in progress
 - Performance improvements
-  
+
 ## 0.18.0
 
 ### Major Changes
@@ -821,7 +941,7 @@
 - Added SSID of router to device info
 - Added firmware info for ESPHome devices
 - Added white border around Matter QR code
-  
+
 ## 0.11.2
 
 ### Minor Changes

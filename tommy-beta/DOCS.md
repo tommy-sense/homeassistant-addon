@@ -1,4 +1,4 @@
-# TOMMY (beta)
+# TOMMY Zero (beta)
 
 ## Configure the Add-on
 
@@ -15,6 +15,8 @@ After installation, configure ports if needed:
 | mqtt              | 1886    | Built-in MQTT broker       |
 | udp_relay         | 8547    | Device communication       |
 
+If you open the dashboard on port 8089 through your own reverse proxy and it changes the host name, add the address you open it on (for example `https://tommy.example.com`) under **Allowed origins**.
+
 For complete installation instructions and additional configuration options, visit the official documentation:
 
-**[TOMMY Documentation](https://www.tommysense.com/docs)**
+**[TOMMY Zero Documentation](https://www.tommysense.com/docs)**
