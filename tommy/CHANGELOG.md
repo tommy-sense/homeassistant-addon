@@ -1,5 +1,12 @@
 # TOMMY
 
+## 7.0.1
+
+### Minor Changes
+
+- Visual improvements in the dashboard
+- Bug fixes
+
 ## 7.0.0
 
 ### Major Changes
