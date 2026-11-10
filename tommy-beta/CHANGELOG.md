@@ -1,5 +1,15 @@
 # TOMMY
 
+## 7.1.0
+
+### Major Changes
+
+- Added 14 day trial
+
+### Minor Changes
+
+- Online Coordination now registers the server every 5 minutes instead of every 10 seconds, and devices wait longer between lookups while they cannot find the server
+
 ## 7.0.1
 
 ### Minor Changes
