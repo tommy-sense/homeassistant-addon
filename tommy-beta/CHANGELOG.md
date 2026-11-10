@@ -1,5 +1,11 @@
 # TOMMY
 
+## 7.1.1
+
+### Minor Changes
+
+- Fixed an issue causing sensing to stop
+
 ## 7.1.0
 
 ### Major Changes
