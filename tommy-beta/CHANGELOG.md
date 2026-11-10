@@ -1,5 +1,12 @@
 # TOMMY
 
+## 7.1.2
+
+### Minor Changes
+
+- Improved license status cards
+- Fixed an issue where devices could lose their connection after running for a while
+
 ## 7.1.1
 
 ### Minor Changes
