@@ -1,5 +1,30 @@
 # TOMMY
 
+## 8.0.0
+
+> **This is a major version with breaking changes.** Some changes below need action from you before your zones work as before, such as new requirements or settings that have to be changed. Until then, sensing can stop and automations that rely on TOMMY can pause. Only update when you have time to go through the breaking changes.
+
+### Major Changes
+
+- **Breaking change:** BSSID pinning during flashing and in the ESPHome YAML has been replaced by automatic BSSID synchronization, with a manual mode directly in the dashboard that pins every device in a zone or group to one BSSID. If you previously set a BSSID when flashing or in your ESPHome YAML and don't want to rely on the automatic synchronization, open each zone in the dashboard and pin the BSSID manually
+- Zones can now mix boards on 2.4 GHz and 5 GHz. 5 GHz devices in a zone with 2.4 GHz devices automatically use 2.4 GHz, as long as every device is flashed with the same network name.
+- Added router zones, which sense with a single device and the router it is connected to
+
+### Minor Changes
+
+- The Home Assistant app now keeps its configuration in `/share/tommy-zero`, shared by TOMMY Zero and TOMMY Zero (beta), so you can stop one and start the other without setting everything up again.
+- The ESPHome component now builds only with tested ESPHome versions. Set `allow_untested_esphome: true` to build with other versions
+- The devices section of each zone and group now shows its access point and a diagram of how well the devices hear each other and the access point.
+- Zones now keep sensing when the connection between devices is weak, where they previously showed no signal. Detection can react a little slower while the connection stays weak
+- Removed the ESP32-C5 Wi-Fi band option from the TOMMY Flasher, replaced by automatic BSSID synchronization
+- Sensing no longer pauses during a short license server outage, as long as the last check is still valid
+- Fixed an issue where the license check could be missed after the server running TOMMY woke from sleep
+- The license card now shows when the license could not be verified, with a hint to check the system time
+- Devices that send data TOMMY cannot use because of missing license data or old firmware are now marked in the zone
+- Added an automatic restart if the Wi-Fi driver gets stuck producing invalid data.
+- Devices running ESPHome now restart through ESPHome, so ESPHome can finish saving its settings first
+- The Home Assistant integration switch of each zone now shows whether the integration is connected, and asks you to update the integration when it is older than TOMMY needs. Update the TOMMY integration in Home Assistant to 1.2.0 or newer to see connection status
+
 ## 7.1.2
 
 ### Minor Changes

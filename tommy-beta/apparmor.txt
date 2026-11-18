@@ -37,6 +37,8 @@ profile tommysense-homeassistant-addon-beta flags=(attach_disconnected,mediate_d
 
   # Data directory
   /data/** rw,
+  /share/tommy-zero/ rw,
+  /share/tommy-zero/** rwk,
 
   # Start profiles for services. The two app processes are exec'd directly by
   # their s6 run scripts, so each entry point needs its own transition into the
@@ -126,6 +128,10 @@ profile tommysense-homeassistant-addon-beta flags=(attach_disconnected,mediate_d
 
     # Data directory
     /data/** rw,
+
+    # Config directory shared by the stable and beta add-on
+    /share/tommy-zero/ rw,
+    /share/tommy-zero/** rwk,
   
     # Application files
     /app/** rwix,

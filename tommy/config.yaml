@@ -1,5 +1,5 @@
 name: TOMMY Zero
-version: "7.1.2"
+version: "8.0.0"
 slug: tommysense-homeassistant-addon
 description: TOMMY Zero is a Wi-Fi sensing system that uses Channel State Information (CSI) from Wi-Fi packets to turn existing devices into presence sensors. It runs on your own hardware and all sensing data stays on your local network
 url: "https://github.com/tommy-sense/homeassistant-addon"
@@ -18,6 +18,8 @@ panel_icon: mdi:wifi-arrow-left-right
 init: false
 map:
   - type: data
+    read_only: False
+  - type: share
     read_only: False
 options:
   ports:
