@@ -1,5 +1,12 @@
 # TOMMY
 
+## 8.0.1
+
+### Minor Changes
+
+- Removed the automatic restart when the Wi-Fi driver produces invalid data. The dashboard still marks these devices
+- Added a Restart option to the menu of each device in the dashboard.
+
 ## 8.0.0
 
 > **This is a major version with breaking changes.** Some changes below need action from you before your zones work as before, such as new requirements or settings that have to be changed. Until then, sensing can stop and automations that rely on TOMMY can pause. Only update when you have time to go through the breaking changes.
