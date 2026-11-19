@@ -1,5 +1,11 @@
 # TOMMY
 
+## 8.1.0-beta.1
+
+### Major Changes
+
+- Experimental switch of the underlying signal representation.
+
 ## 8.0.1
 
 ### Minor Changes
