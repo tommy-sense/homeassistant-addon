@@ -1,5 +1,16 @@
 # TOMMY
 
+## 8.1.0
+
+### Major Changes
+
+- Improved stability of the presence algorithms.
+- Updated performance modes and adding a warning regarding High Performance
+
+### Minor Changes
+
+- Improved display of link health
+
 ## 8.0.1
 
 ### Minor Changes

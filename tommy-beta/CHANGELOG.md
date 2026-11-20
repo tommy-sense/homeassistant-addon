@@ -1,10 +1,15 @@
 # TOMMY
 
-## 8.1.0-beta.1
+## 8.1.0
 
 ### Major Changes
 
-- Experimental switch of the underlying signal representation.
+- Improved stability of the presence algorithms.
+- Updated performance modes and adding a warning regarding High Performance
+
+### Minor Changes
+
+- Improved display of link health
 
 ## 8.0.1
 
